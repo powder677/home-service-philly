@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- SEO-Optimized Title & Meta Description -->
+   <title>Philly Home Pros | Philadelphia's Trusted Home Service Experts</title>
+   <meta name="description" content="Your one-call solution for plumbing, HVAC, electrical, roofing & cleaning in Philadelphia. Licensed & insured. Trusted by your neighbors. Schedule service today!">
+
+   <!-- Tailwind CSS -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+   <!-- Google Fonts: Inter -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+   <!-- Font Awesome for Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <!-- Custom Styles -->
+   <style>
+      body {
+         font-family: 'Inter', sans-serif;
+      }
+
+      .hero-bg-hub {
+         background-image: linear-gradient(rgba(0, 28, 64, 0.8), rgba(0, 28, 64, 0.8)), url('https://placehold.co/1200x800/e2e8f0/64748b?text=Philly+Home+Pros+Team');
+         background-size: cover;
+         background-position: center;
+      }
+
+      /* Spinner animation */
+      .loader {
+         border: 4px solid #f3f3f3;
+         border-top: 4px solid #3498db;
+         border-radius: 50%;
+         width: 40px;
+         height: 40px;
+         animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+         0% {
+            transform: rotate(0deg);
+         }
+
+         100% {
+            transform: rotate(360deg);
+         }
+      }
+   </style>
+
+   <!-- SEO: Organization & Local Business Schema -->
+   <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "Organization",
+         "name": "Philly Home Pros",
+         "url": "https://www.phillyhomepros.com",
+         "logo": "https://placehold.co/600x400/3b82f6/ffffff?text=Philly+Home+Pros",
+         "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-215-555-0100",
+            "contactType": "Customer Service"
+         },
+         "sameAs": [
+            "https://www.facebook.com/phillyhomepros",
+            "https://www.twitter.com/phillyhomepros"
+         ],
+         "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.phillyhomepros.com"
+         }
+      }
+   </script>
+   <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "LocalBusiness",
+         "name": "Philly Home Pros",
+         "image": "https://placehold.co/600x400/3b82f6/ffffff?text=Philly+Home+Pros",
+         "@id": "https://www.phillyhomepros.com",
+         "url": "https://www.phillyhomepros.com",
+         "telephone": "+1-215-555-0100",
+         "priceRange": "$$-$$$",
+         "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Market St",
+            "addressLocality": "Philadelphia",
+            "addressRegion": "PA",
+            "postalCode": "19107",
+            "addressCountry": "US"
+         },
+         "areaServed": {
+            "@type": "City",
+            "name": "Philadelphia"
+         },
+         "department": [{
+               "@type": "PlumbingBusiness",
+               "name": "Philly Home Pros Plumbing",
+               "@id": "https://www.phillyhomepros.com/plumbing-philadelphia"
+            },
+            {
+               "@type": "HVACBusiness",
+               "name": "Philly Home Pros HVAC",
+               "@id": "https://www.phillyhomepros.com/hvac-philadelphia"
+            },
+            {
+               "@type": "Electrician",
+               "name": "Philly Home Pros Electrical",
+               "@id": "https://www.phillyhomepros.com/electrician-philadelphia"
+            },
+            {
+               "@type": "RoofingContractor",
+               "name": "Philly Home Pros Roofing",
+               "@id": "https://www.phillyhomepros.com/roofing-philadelphia"
+            },
+            {
+               "@type": "HouseCleaningService",
+               "name": "Philly Home Pros Cleaning",
+               "@id": "https://www.phillyhomepros.com/cleaning-philadelphia"
+            }
+         ]
+      }
+   </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+   <!-- Header -->
+   <header class="bg-white shadow-sm sticky top-0 z-50">
+      <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+         <a href="#" class="text-2xl font-bold text-blue-800">Philly Home Pros</a>
+         <div class="flex items-center space-x-4">
+            <a href="#services" class="text-gray-600 hover:text-blue-600">Our Services</a>
+            <a href="#contact" class="text-gray-600 hover:text-blue-600">Visual Quote</a>
+            <a href="#contact" class="hidden md:inline-block bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-yellow-500 transition duration-300">
+               Schedule Service
+            </a>
+         </div>
+      </nav>
+   </header>
+
+   <!-- Main Content -->
+   <main>
+
+      <!-- Hero Section / Above the Fold -->
+      <section class="hero-bg-hub text-white">
+         <div class="container mx-auto px-6 py-20 md:py-32 text-center flex flex-col items-center">
+            <div class="max-w-4xl">
+               <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">All Your Home Service Needs, One Trusted Philadelphia Team</h1>
+               <p class="text-lg md:text-2xl mb-8 font-light">Expert Plumbing, HVAC, Electrical, Roofing & Cleaning Services.</p>
+               <a href="#contact" class="bg-yellow-400 text-gray-900 font-bold py-4 px-10 rounded-lg text-xl hover:bg-yellow-500 transition duration-300 shadow-lg">
+                  Get a Visual Quote
+               </a>
+            </div>
+         </div>
+         <!-- Trust Signals Banner -->
+         <div class="bg-blue-800/80 backdrop-blur-sm">
+            <div class="container mx-auto px-6 py-6 grid grid-cols-1 sm:grid-cols-3 gap-4 text-white text-center">
+               <div class="flex items-center justify-center gap-3">
+                  <i class="fa-solid fa-star text-yellow-400 text-2xl"></i>
+                  <span class="font-bold text-lg">Over 1,000 5-Star Reviews</span>
+               </div>
+               <div class="flex items-center justify-center gap-3">
+                  <i class="fa-solid fa-clock text-yellow-400 text-2xl"></i>
+                  <span class="font-bold text-lg">24/7 Emergency Service</span>
+               </div>
+               <div class="flex items-center justify-center gap-3">
+                  <i class="fa-solid fa-trophy text-yellow-400 text-2xl"></i>
+                  <span class="font-bold text-lg">Serving Philadelphia Since 2010</span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Services Section (The Spokes) -->
+      <section id="services" class="py-16 md:py-24 bg-white">
+         <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+               <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How Can We Help You Today?</h2>
+               <p class="text-lg text-gray-600">One call is all it takes. Select a service below to learn more and schedule an appointment with our expert team.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <!-- Plumbing Card -->
+               <div class="bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col">
+                  <div class="p-8 flex-grow">
+                     <i class="fa-solid fa-wrench text-4xl text-blue-600 mb-4"></i>
+                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Plumbing</h3>
+                     <p class="text-gray-600 mb-6">From leaky faucets and clogged drains to emergency pipe repairs and water heaters.</p>
+                  </div>
+                  <a href="./plumbing-philadelphia.html" class="block bg-blue-100 text-blue-800 font-bold p-4 text-center hover:bg-blue-200 transition-colors">View Plumbing Services →</a>
+               </div>
+               <!-- HVAC Card -->
+               <div class="bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col">
+                  <div class="p-8 flex-grow">
+                     <i class="fa-solid fa-wind text-4xl text-blue-600 mb-4"></i>
+                     <h3 class="text-2xl font-bold text-gray-900 mb-2">HVAC</h3>
+                     <p class="text-gray-600 mb-6">Heating and AC services for year-round comfort, including repair, maintenance, and installation.</p>
+                  </div>
+                  <a href="./hvac-philadelphia.html" class="block bg-blue-100 text-blue-800 font-bold p-4 text-center hover:bg-blue-200 transition-colors">View HVAC Services →</a>
+               </div>
+               <!-- Electrical Card -->
+               <div class="bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col">
+                  <div class="p-8 flex-grow">
+                     <i class="fa-solid fa-bolt-lightning text-4xl text-blue-600 mb-4"></i>
+                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Electrical</h3>
+                     <p class="text-gray-600 mb-6">Safe, certified repairs, panel upgrades, EV charger installation, and all wiring needs.</p>
+                  </div>
+                  <a href="./electrician-philadelphia.html" class="block bg-blue-100 text-blue-800 font-bold p-4 text-center hover:bg-blue-200 transition-colors">View Electrical Services →</a>
+               </div>
+               <!-- Roofing Card -->
+               <div class="bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col">
+                  <div class="p-8 flex-grow">
+                     <i class="fa-solid fa-house-chimney-window text-4xl text-blue-600 mb-4"></i>
+                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Roofing</h3>
+                     <p class="text-gray-600 mb-6">Protecting your home with expert roof repair, full replacement, and storm damage services.</p>
+                  </div>
+                  <a href="./roofing-philadelphia.html" class="block bg-blue-100 text-blue-800 font-bold p-4 text-center hover:bg-blue-200 transition-colors">View Roofing Services →</a>
+               </div>
+               <!-- House Cleaning Card -->
+               <div class="bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col">
+                  <div class="p-8 flex-grow">
+                     <i class="fa-solid fa-sparkles text-4xl text-blue-600 mb-4"></i>
+                     <h3 class="text-2xl font-bold text-gray-900 mb-2">House Cleaning</h3>
+                     <p class="text-gray-600 mb-6">Reliable, professional, and eco-friendly cleaning services for a spotless home.</p>
+                  </div>
+                  <a href="./cleaning-philadelphia.html" class="block bg-blue-100 text-blue-800 font-bold p-4 text-center hover:bg-blue-200 transition-colors">View Cleaning Services →</a>
+               </div>
+               <!-- General Contact Card -->
+               <div class="bg-blue-600 text-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col items-center justify-center text-center p-8">
+                  <i class="fa-solid fa-circle-question text-4xl text-yellow-400 mb-4"></i>
+                  <h3 class="text-2xl font-bold mb-2">Not Sure?</h3>
+                  <p class="mb-6">Have a different project or question? We're here to help.</p>
+                  <a href="#contact" class="block bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Contact Us Directly</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- The Promise Section (E-E-A-T) -->
+      <section class="py-16 md:py-24 bg-gray-100">
+         <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+               <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">The Philly Home Pros Promise</h2>
+               <p class="text-lg text-gray-600">We're committed to providing an exceptional experience, every single time.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+               <div class="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4">
+                  <i class="fa-solid fa-phone-volume text-3xl text-blue-600 mt-1"></i>
+                  <div>
+                     <h3 class="font-bold text-lg">One Call for Any Problem</h3>
+                     <p class="text-gray-600">No more searching for different companies. We have a licensed expert ready for any job, saving you time and hassle.</p>
+                  </div>
+               </div>
+               <div class="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4">
+                  <i class="fa-solid fa-user-shield text-3xl text-blue-600 mt-1"></i>
+                  <div>
+                     <h3 class="font-bold text-lg">Licensed & Insured Professionals</h3>
+                     <p class="text-gray-600">Every technician and cleaner on our team is fully licensed, insured, and committed to the highest standards.</p>
+                  </div>
+               </div>
+               <div class="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4">
+                  <i class="fa-solid fa-house-user text-3xl text-blue-600 mt-1"></i>
+                  <div>
+                     <h3 class="font-bold text-lg">We Know Philadelphia Homes</h3>
+                     <p class="text-gray-600">Our teams have years of experience in every type of Philly home, from historic Trinities to modern constructions.</p>
+                  </div>
+               </div>
+               <div class="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4">
+                  <i class="fa-solid fa-circle-check text-3xl text-blue-600 mt-1"></i>
+                  <div>
+                     <h3 class="font-bold text-lg">Your Satisfaction, Guaranteed</h3>
+                     <p class="text-gray-600">We stand behind our work. If you're not 100% satisfied with our service, we'll make it right. Period.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Testimonial Section -->
+      <section class="py-16 md:py-24 bg-white">
+         <div class="container mx-auto px-6 max-w-3xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Your Philadelphia Neighbors Are Saying</h2>
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-8 rounded-r-lg shadow-sm mt-8 text-left">
+               <p class="text-gray-700 italic text-xl">"I've used Philly Home Pros for a plumbing emergency and later for a new roof. The professionalism across both teams was incredible. It's such a relief to have one company I can trust for everything."</p>
+               <p class="text-right font-bold text-gray-800 mt-4">- Jennifer A., South Philadelphia</p>
+            </div>
+         </div>
+      </section>
+
+      <!-- Visual Estimator Section -->
+      <section id="contact" class="py-16 md:py-24 bg-blue-800 text-white">
+         <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Get a Visual Quote Instantly</h2>
+            <p class="text-lg text-blue-200 max-w-2xl mx-auto mb-8">Have a problem? Snap a photo and let our AI provide a preliminary analysis and get you a highly qualified lead. It's the fastest way to get started.</p>
+
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-2xl text-gray-800">
+               <div id="visual-estimator">
+                  <!-- Step 1: Upload -->
+                  <div id="upload-step">
+                     <label for="image-upload" class="cursor-pointer bg-yellow-400 text-gray-900 font-bold p-4 rounded-lg text-lg hover:bg-yellow-500 transition duration-300 shadow-lg w-full block">
+                        <i class="fa-solid fa-camera mr-2"></i> Upload a Photo of the Problem
+                     </label>
+                     <input type="file" id="image-upload" class="hidden" accept="image/*">
+                     <p class="text-sm text-gray-500 mt-4">We'll analyze it to identify the issue.</p>
+                  </div>
+
+                  <!-- Step 2: Analysis -->
+                  <div id="analysis-step" class="hidden">
+                     <img id="image-preview" src="" alt="Image preview" class="max-w-full h-auto mx-auto rounded-lg mb-4 max-h-64">
+                     <div id="loader-container" class="flex flex-col items-center justify-center">
+                        <div class="loader mb-4"></div>
+                        <p class="text-blue-600 font-semibold">Analyzing your photo with Gemini AI...</p>
+                     </div>
+                     <div id="analysis-result" class="hidden text-left bg-gray-100 p-4 rounded-lg">
+                        <!-- AI result will be inserted here -->
+                     </div>
+                     <div id="contact-info-step" class="hidden mt-6 text-left">
+                        <h3 class="font-bold text-xl mb-4">Great! Let's get your contact info.</h3>
+                        <form id="contact-form" class="space-y-4">
+                           <input type="text" id="user-name" placeholder="Full Name" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
+                           <input type="tel" id="user-phone" placeholder="Phone Number" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
+                           <button type="submit" class="w-full bg-green-500 text-white font-bold p-4 rounded-lg text-lg hover:bg-green-600 transition duration-300 shadow-lg">
+                              Send My Qualified Lead
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <p class="mt-8 text-2xl">Or Call Us 24/7: <a href="tel:215-555-0100" class="font-extrabold underline hover:text-yellow-300">(215) 555-0100</a></p>
+         </div>
+      </section>
+   </main>
+
+   <!-- Footer -->
+   <footer class="bg-gray-900 text-gray-400 py-8">
+      <div class="container mx-auto px-6 text-center">
+         <p>© 2024 Philly Home Pros. All Rights Reserved.</p>
+         <p class="text-sm mt-2">Your Trusted Partner for Plumbing, HVAC, Electrical, Roofing & Cleaning in Philadelphia, PA.</p>
+         <div class="mt-4">
+            <a href="#" class="px-2 hover:text-white">About Us</a> |
+            <a href="#" class="px-2 hover:text-white">Financing</a> |
+            <a href="#contact" class="px-2 hover:text-white">Contact Us</a>
+         </div>
+      </div>
+   </footer>
+
+   <script>
+      // --- Visual Estimator Logic ---
+      const uploadStep = document.getElementById('upload-step');
+      const analysisStep = document.getElementById('analysis-step');
+      const imageUpload = document.getElementById('image-upload');
+      const imagePreview = document.getElementById('image-preview');
+      const loaderContainer = document.getElementById('loader-container');
+      const analysisResult = document.getElementById('analysis-result');
+      const contactInfoStep = document.getElementById('contact-info-step');
+      const contactForm = document.getElementById('contact-form');
+
+      imageUpload.addEventListener('change', (event) => {
+         const file = event.target.files[0];
+         if (file) {
+            // Switch to the analysis view
+            uploadStep.classList.add('hidden');
+            analysisStep.classList.remove('hidden');
+            loaderContainer.classList.remove('hidden');
+            analysisResult.classList.add('hidden');
+            contactInfoStep.classList.add('hidden');
+
+
+            // Create a reader to convert image to base64
+            const reader = new FileReader();
+            reader.onload = (e) => {
+               const base64ImageData = e.target.result.split(',')[1];
+               imagePreview.src = e.target.result;
+               // Call the AI analysis function
+               analyzeImageWithGemini(base64ImageData);
+            };
+            reader.readAsDataURL(file);
+         }
+      });
+
+      async function analyzeImageWithGemini(base64ImageData) {
+            const prompt = `
+                You are an expert home service dispatcher for a company called "Philly Home Pros".
+                Analyze the following image of a customer's home service issue.
+                Based on the image, provide a brief, friendly, and helpful analysis.
+                Your analysis should:
+                1.  Identify the probable issue (e.g., "a leak from a P-trap under a sink," "a damaged section of asphalt shingles," "a standard residential circuit breaker panel").
+                2.  Suggest the likely service required (e.g., "Plumbing Repair," "Roofing Repair," "Electrical Service").
+                3.  Provide a very rough, non-binding ballpark estimate if possible and appropriate, framed clearly as an estimate (e.g., "Repairs like this typically range from..."). If you cannot determine a price, state that an expert will provide a firm quote on-site.
+                4.  End with a reassuring statement that a qualified lead has been created and the team will be in touch shortly to confirm details.
+                Do not make up facts. If the image is unclear, state that and say an expert will need to diagnose it in person.
+                Format the output as clean HTML paragraphs.
+            `;
+
+            const payload = {
+               contents: [{
+                  role: "user",
+                  parts: [{
+                        text: prompt
+                     },
+                     {
+                        inlineData: {
+                           mimeType: "image/jpeg",
+                           data: base64ImageData
+                        }
+                     }
+                  ]
+               }],
+            };
+
+            const apiKey = ""; // API key will be provided by the environment
+            const apiUrl = \`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=\${apiKey}\`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(\`API request failed with status \${response.status}\`);
+                }
+                
+                const result = await response.json();
+
+                let analysisText = '<p>Could not analyze the image. Please provide your contact info, and an expert will call you to diagnose the problem.</p>';
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    analysisText = result.candidates[0].content.parts[0].text;
+                }
+                 
+                analysisResult.innerHTML = analysisText;
+
+            } catch (error) {
+                console.error("Error analyzing image:", error);
+                analysisResult.innerHTML = '<p class="text-red-500">Sorry, we encountered an error trying to analyze your image. Please fill out your contact info, and a team member will call you right away.</p>';
+            } finally {
+                // Hide loader and show the result and contact form
+                loaderContainer.classList.add('hidden');
+                analysisResult.classList.remove('hidden');
+                contactInfoStep.classList.remove('hidden');
+            }
+        }
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const name = document.getElementById('user-name').value;
+            const phone = document.getElementById('user-phone').value;
+            const analysis = analysisResult.innerText;
+            
+            // Here you would typically send this lead data to your backend/CRM
+            console.log("--- New Visual Lead ---");
+            console.log("Name:", name);
+            console.log("Phone:", phone);
+            console.log("AI Analysis:", analysis);
+            console.log("Image:", imagePreview.src); // The base64 image data
+            
+            // Show a success message to the user
+            const visualEstimatorDiv = document.getElementById('visual-estimator');
+            visualEstimatorDiv.innerHTML = \`
+                <div class="text-center">
+                    <i class="fa-solid fa-check-circle text-6xl text-green-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Thank You, \${name}!</h3>
+                    <p class="text-gray-600">Your visual quote request has been sent. Our team will review the details and contact you shortly at \${phone} to confirm your appointment.</p>
+                </div>
+            \`;
+        });
+   </script>
+
+</body>
+
+</html>

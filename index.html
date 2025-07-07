@@ -31,26 +31,6 @@
          background-size: cover;
          background-position: center;
       }
-
-      /* Spinner animation */
-      .loader {
-         border: 4px solid #f3f3f3;
-         border-top: 4px solid #3498db;
-         border-radius: 50%;
-         width: 40px;
-         height: 40px;
-         animation: spin 1s linear infinite;
-      }
-
-      @keyframes spin {
-         0% {
-            transform: rotate(0deg);
-         }
-
-         100% {
-            transform: rotate(360deg);
-         }
-      }
    </style>
 
    <!-- SEO: Organization & Local Business Schema -->
@@ -136,7 +116,7 @@
          <a href="#" class="text-2xl font-bold text-blue-800">Philly Home Pros</a>
          <div class="flex items-center space-x-4">
             <a href="#services" class="text-gray-600 hover:text-blue-600">Our Services</a>
-            <a href="#contact" class="text-gray-600 hover:text-blue-600">Visual Quote</a>
+            <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
             <a href="#contact" class="hidden md:inline-block bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-yellow-500 transition duration-300">
                Schedule Service
             </a>
@@ -154,7 +134,7 @@
                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">All Your Home Service Needs, One Trusted Philadelphia Team</h1>
                <p class="text-lg md:text-2xl mb-8 font-light">Expert Plumbing, HVAC, Electrical, Roofing & Cleaning Services.</p>
                <a href="#contact" class="bg-yellow-400 text-gray-900 font-bold py-4 px-10 rounded-lg text-xl hover:bg-yellow-500 transition duration-300 shadow-lg">
-                  Get a Visual Quote
+                  Schedule Service Now
                </a>
             </div>
          </div>
@@ -292,189 +272,21 @@
          </div>
       </section>
 
-      <!-- Visual Estimator Section -->
+      <!-- Final CTA Section -->
       <section id="contact" class="py-16 md:py-24 bg-blue-800 text-white">
          <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Get a Visual Quote Instantly</h2>
-            <p class="text-lg text-blue-200 max-w-2xl mx-auto mb-8">Have a problem? Snap a photo and let our AI provide a preliminary analysis and get you a highly qualified lead. It's the fastest way to get started.</p>
-
-            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-2xl text-gray-800">
-               <div id="visual-estimator">
-                  <!-- Step 1: Upload -->
-                  <div id="upload-step">
-                     <label for="image-upload" class="cursor-pointer bg-yellow-400 text-gray-900 font-bold p-4 rounded-lg text-lg hover:bg-yellow-500 transition duration-300 shadow-lg w-full block">
-                        <i class="fa-solid fa-camera mr-2"></i> Upload a Photo of the Problem
-                     </label>
-                     <input type="file" id="image-upload" class="hidden" accept="image/*">
-                     <p class="text-sm text-gray-500 mt-4">We'll analyze it to identify the issue.</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready To Get Started?</h2>
+            <p class="text-lg text-blue-200 max-w-2xl mx-auto mb-8">Schedule service online, or give us a call. Our team is standing by to help, 24/7.</p>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
+               <form action="#" method="POST" class="space-y-4">
+                  <div>
+                     <label for="name-2" class="sr-only">Name</label>
+                     <input type="text" id="name-2" name="name" placeholder="Full Name" class="w-full p-3 rounded-lg text-gray-800 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                   </div>
-
-                  <!-- Step 2: Analysis -->
-                  <div id="analysis-step" class="hidden">
-                     <img id="image-preview" src="" alt="Image preview" class="max-w-full h-auto mx-auto rounded-lg mb-4 max-h-64">
-                     <div id="loader-container" class="flex flex-col items-center justify-center">
-                        <div class="loader mb-4"></div>
-                        <p class="text-blue-600 font-semibold">Analyzing your photo with Gemini AI...</p>
-                     </div>
-                     <div id="analysis-result" class="hidden text-left bg-gray-100 p-4 rounded-lg">
-                        <!-- AI result will be inserted here -->
-                     </div>
-                     <div id="contact-info-step" class="hidden mt-6 text-left">
-                        <h3 class="font-bold text-xl mb-4">Great! Let's get your contact info.</h3>
-                        <form id="contact-form" class="space-y-4">
-                           <input type="text" id="user-name" placeholder="Full Name" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
-                           <input type="tel" id="user-phone" placeholder="Phone Number" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
-                           <button type="submit" class="w-full bg-green-500 text-white font-bold p-4 rounded-lg text-lg hover:bg-green-600 transition duration-300 shadow-lg">
-                              Send My Qualified Lead
-                           </button>
-                        </form>
-                     </div>
+                  <div>
+                     <label for="phone-2" class="sr-only">Phone</label>
+                     <input type="tel" id="phone-2" name="phone" placeholder="Phone Number" class="w-full p-3 rounded-lg text-gray-800 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                   </div>
-               </div>
-            </div>
-            <p class="mt-8 text-2xl">Or Call Us 24/7: <a href="tel:215-555-0100" class="font-extrabold underline hover:text-yellow-300">(215) 555-0100</a></p>
-         </div>
-      </section>
-   </main>
-
-   <!-- Footer -->
-   <footer class="bg-gray-900 text-gray-400 py-8">
-      <div class="container mx-auto px-6 text-center">
-         <p>© 2024 Philly Home Pros. All Rights Reserved.</p>
-         <p class="text-sm mt-2">Your Trusted Partner for Plumbing, HVAC, Electrical, Roofing & Cleaning in Philadelphia, PA.</p>
-         <div class="mt-4">
-            <a href="#" class="px-2 hover:text-white">About Us</a> |
-            <a href="#" class="px-2 hover:text-white">Financing</a> |
-            <a href="#contact" class="px-2 hover:text-white">Contact Us</a>
-         </div>
-      </div>
-   </footer>
-
-   <script>
-      // --- Visual Estimator Logic ---
-      const uploadStep = document.getElementById('upload-step');
-      const analysisStep = document.getElementById('analysis-step');
-      const imageUpload = document.getElementById('image-upload');
-      const imagePreview = document.getElementById('image-preview');
-      const loaderContainer = document.getElementById('loader-container');
-      const analysisResult = document.getElementById('analysis-result');
-      const contactInfoStep = document.getElementById('contact-info-step');
-      const contactForm = document.getElementById('contact-form');
-
-      imageUpload.addEventListener('change', (event) => {
-         const file = event.target.files[0];
-         if (file) {
-            // Switch to the analysis view
-            uploadStep.classList.add('hidden');
-            analysisStep.classList.remove('hidden');
-            loaderContainer.classList.remove('hidden');
-            analysisResult.classList.add('hidden');
-            contactInfoStep.classList.add('hidden');
-
-
-            // Create a reader to convert image to base64
-            const reader = new FileReader();
-            reader.onload = (e) => {
-               const base64ImageData = e.target.result.split(',')[1];
-               imagePreview.src = e.target.result;
-               // Call the AI analysis function
-               analyzeImageWithGemini(base64ImageData);
-            };
-            reader.readAsDataURL(file);
-         }
-      });
-
-      async function analyzeImageWithGemini(base64ImageData) {
-            const prompt = `
-                You are an expert home service dispatcher for a company called "Philly Home Pros".
-                Analyze the following image of a customer's home service issue.
-                Based on the image, provide a brief, friendly, and helpful analysis.
-                Your analysis should:
-                1.  Identify the probable issue (e.g., "a leak from a P-trap under a sink," "a damaged section of asphalt shingles," "a standard residential circuit breaker panel").
-                2.  Suggest the likely service required (e.g., "Plumbing Repair," "Roofing Repair," "Electrical Service").
-                3.  Provide a very rough, non-binding ballpark estimate if possible and appropriate, framed clearly as an estimate (e.g., "Repairs like this typically range from..."). If you cannot determine a price, state that an expert will provide a firm quote on-site.
-                4.  End with a reassuring statement that a qualified lead has been created and the team will be in touch shortly to confirm details.
-                Do not make up facts. If the image is unclear, state that and say an expert will need to diagnose it in person.
-                Format the output as clean HTML paragraphs.
-            `;
-
-            const payload = {
-               contents: [{
-                  role: "user",
-                  parts: [{
-                        text: prompt
-                     },
-                     {
-                        inlineData: {
-                           mimeType: "image/jpeg",
-                           data: base64ImageData
-                        }
-                     }
-                  ]
-               }],
-            };
-
-            const apiKey = ""; // API key will be provided by the environment
-            const apiUrl = \`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=\${apiKey}\`;
-
-            try {
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                if (!response.ok) {
-                    throw new Error(\`API request failed with status \${response.status}\`);
-                }
-                
-                const result = await response.json();
-
-                let analysisText = '<p>Could not analyze the image. Please provide your contact info, and an expert will call you to diagnose the problem.</p>';
-                if (result.candidates && result.candidates.length > 0 &&
-                    result.candidates[0].content && result.candidates[0].content.parts &&
-                    result.candidates[0].content.parts.length > 0) {
-                    analysisText = result.candidates[0].content.parts[0].text;
-                }
-                 
-                analysisResult.innerHTML = analysisText;
-
-            } catch (error) {
-                console.error("Error analyzing image:", error);
-                analysisResult.innerHTML = '<p class="text-red-500">Sorry, we encountered an error trying to analyze your image. Please fill out your contact info, and a team member will call you right away.</p>';
-            } finally {
-                // Hide loader and show the result and contact form
-                loaderContainer.classList.add('hidden');
-                analysisResult.classList.remove('hidden');
-                contactInfoStep.classList.remove('hidden');
-            }
-        }
-
-        contactForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            const name = document.getElementById('user-name').value;
-            const phone = document.getElementById('user-phone').value;
-            const analysis = analysisResult.innerText;
-            
-            // Here you would typically send this lead data to your backend/CRM
-            console.log("--- New Visual Lead ---");
-            console.log("Name:", name);
-            console.log("Phone:", phone);
-            console.log("AI Analysis:", analysis);
-            console.log("Image:", imagePreview.src); // The base64 image data
-            
-            // Show a success message to the user
-            const visualEstimatorDiv = document.getElementById('visual-estimator');
-            visualEstimatorDiv.innerHTML = \`
-                <div class="text-center">
-                    <i class="fa-solid fa-check-circle text-6xl text-green-500 mb-4"></i>
-                    <h3 class="text-2xl font-bold mb-2">Thank You, \${name}!</h3>
-                    <p class="text-gray-600">Your visual quote request has been sent. Our team will review the details and contact you shortly at \${phone} to confirm your appointment.</p>
-                </div>
-            \`;
-        });
-   </script>
-
-</body>
-
-</html>
+                  <div>
+                     <label for="message" class="sr-only">Message</label>
+                     <textarea id="message" name="message" rows="4" placeholder="How can we help you today?" class="w-full p-3 rounded-lg text-gray-800 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">

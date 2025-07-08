@@ -7,7 +7,7 @@
 
    <!-- SEO-Optimized Title & Meta Description -->
    <title>Philly Home Pros | Philadelphia's Trusted Home Service Experts</title>
-   <meta name="description" content="Your one-call solution for plumbing, HVAC, electrical, roofing & cleaning in Philadelphia. Licensed & insured. Trusted by your neighbors. Schedule service today!">
+   <meta name="description" content="Your one-call solution for plumbing, HVAC, electrical, roofing, handyman & cleaning in Philadelphia. Licensed & insured. Trusted by your neighbors. Schedule service today!">
 
    <!-- Tailwind CSS -->
    <script src="https://cdn.tailwindcss.com"></script>
@@ -28,7 +28,7 @@
 
       .hero-bg-hub {
          /* This now links to an external image file */
-         background-image: linear-gradient(rgba(0, 28, 64, 0.8), rgba(0, 28, 64, 0.8)), url('./philly-hero-bg.png');
+         background-image: linear-gradient(rgba(0, 28, 64, 0.8), rgba(0, 28, 64, 0.8)), url('https://images.pexels.com/photos/159045/the-interior-of-the-repair-interior-design-414837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
          background-size: cover;
          background-position: center;
       }
@@ -103,6 +103,11 @@
                "@type": "HouseCleaningService",
                "name": "Philly Home Pros Cleaning",
                "@id": "https://www.phillyhomepros.com/cleaning-philadelphia"
+            },
+            {
+               "@type": "Handyman",
+               "name": "Philly Home Pros Handyman",
+               "@id": "https://www.phillyhomepros.com/handyman-philadelphia"
             }
          ]
       }
@@ -133,7 +138,7 @@
          <div class="container mx-auto px-6 py-20 md:py-32 text-center flex flex-col items-center">
             <div class="max-w-4xl">
                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">All Your Home Service Needs, One Trusted Philadelphia Team</h1>
-               <p class="text-lg md:text-2xl mb-8 font-light">Expert Plumbing, HVAC, Electrical, Roofing & Cleaning Services.</p>
+               <p class="text-lg md:text-2xl mb-8 font-light">Expert Plumbing, HVAC, Electrical, Roofing, Handyman & Cleaning Services.</p>
                <a href="#contact" class="bg-yellow-400 text-gray-900 font-bold py-4 px-10 rounded-lg text-xl hover:bg-yellow-500 transition duration-300 shadow-lg">
                   Schedule Service Now
                </a>
@@ -202,6 +207,15 @@
                   </div>
                   <a href="./roofing-philadelphia.html" class="block bg-blue-100 text-blue-800 font-bold p-4 text-center hover:bg-blue-200 transition-colors">View Roofing Services →</a>
                </div>
+               <!-- Handyman Card -->
+               <div class="bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col">
+                  <div class="p-8 flex-grow">
+                     <i class="fa-solid fa-toolbox text-4xl text-blue-600 mb-4"></i>
+                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Handyman Services</h3>
+                     <p class="text-gray-600 mb-6">For all the small jobs and repairs, from furniture assembly to drywall patching.</p>
+                  </div>
+                  <a href="./handyman-philadelphia.html" class="block bg-blue-100 text-blue-800 font-bold p-4 text-center hover:bg-blue-200 transition-colors">View Handyman Services →</a>
+               </div>
                <!-- House Cleaning Card -->
                <div class="bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col">
                   <div class="p-8 flex-grow">
@@ -210,13 +224,6 @@
                      <p class="text-gray-600 mb-6">Reliable, professional, and eco-friendly cleaning services for a spotless home.</p>
                   </div>
                   <a href="./cleaning-philadelphia.html" class="block bg-blue-100 text-blue-800 font-bold p-4 text-center hover:bg-blue-200 transition-colors">View Cleaning Services →</a>
-               </div>
-               <!-- General Contact Card -->
-               <div class="bg-blue-600 text-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col items-center justify-center text-center p-8">
-                  <i class="fa-solid fa-circle-question text-4xl text-yellow-400 mb-4"></i>
-                  <h3 class="text-2xl font-bold mb-2">Not Sure?</h3>
-                  <p class="mb-6">Have a different project or question? We're here to help.</p>
-                  <a href="#contact" class="block bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Contact Us Directly</a>
                </div>
             </div>
          </div>
@@ -290,4 +297,4 @@
                   </div>
                   <div>
                      <label for="message" class="sr-only">Message</label>
-                     <textarea id="message" name="message" rows="4" placeholder="How can we help you today?" class="w-full p-3 rounded-lg text-gray-800 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                     <textarea id="message" name="message" rows="4" placeholder="How can we help you today?" class="w-full p-3 rounded-lg text-gray-800 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
